@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T.CREW STORE</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/resposive.css" />
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="grid wide">
+          <nav class="header__navbar hide-on-mobile-tablet">
+            <ul class="header__navbar-list">
+              <li
+                class="
+                  header__navbar-item header__navbar-item-dropdown header__navbar-item--separate
+                "
+              >
+                Vào cửa hàng trên ứng dụng T.CREW Shop
+                <div class="header__qr">
+                  <img src="./assets/img/QR.png" alt="QR" class="header__qr-img" />
+                  <div class="header__qr-apps">
+                    <a href="" class="header__qr-apps-link">
+                      <img
+                        src="./assets/img/gg-play.png"
+                        alt="Google Play"
+                        class="header__qr-apps-img"
+                      />
+                    </a>
+                    <a href="" class="header__qr-apps-link">
+                      <img
+                        src="./assets/img/app-store.png"
+                        alt="App Store"
+                        class="header__qr-apps-img"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="header__navbar-item">
+                <Span class="header__navbar-item-no-pointer">Kết nối</Span>
+                <a href="http://fb.com/2707PT" class="header-navbar-icon-link">
+                  <i class="header-navbar-icon fab fa-facebook"></i>
+                </a>
+                <a href="" class="header-navbar-icon-link">
+                  <i class="header-navbar-icon fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+            <ul class="header__navbar-list">
+              <li class="header__navbar-item header__navbar-item-has-notify">
+                <a href="" class="header__navbar-item-link">
+                  <i class="header-navbar-icon far fa-bell"></i>
+                  Thông báo
+                </a>
+                <div class="header__notify">
+                  <header class="header__notify-header">
+                    <h3>Thông Báo Mới Nhận</h3>
+                  </header>
+                  <ul class="header__notify-list">
+                    <li class="header__notify-item">
+                      <a href="" class="header__notify-link header__notify-link--viewer">
+                        <img src="./assets/img/notify-img.jpg" alt="" class="header__notify-img" />
+                        <div class="header__notify-info">
+                          <p class="header__notify-name">
+                            Chính thức ra mắt bộ sưu tập VietNam Authentic Brand Blue & White
+                          </p>
+                          <p class="header__notify-desc">Thời trang T.CREW chính hãng</p>
+                        </div>
+                      </a>
+                      <a href="" class="header__notify-link header__notify-link--viewer">
+                        <img src="./assets/img/notify-img.jpg" alt="" class="header__notify-img" />
+                        <div class="header__notify-info">
+                          <p class="header__notify-name">
+                            Chính thức ra mắt bộ sưu tập Blue & White
+                          </p>
+                          <p class="header__notify-desc">Thời trang T.CREW chính hãng</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <footer class="header__notify-footer">
+                    <a href="" class="header__notify-footer-link">Xem Tất Cả</a>
+                  </footer>
+                </div>
+              </li>
+              <li class="header__navbar-item">
+                <a href="" class="header__navbar-item-link">
+                  <i class="header-navbar-icon far fa-question-circle"></i>
+                  Trợ giúp
+                </a>
+              </li>
+              <!-- <li
+                class="
+                  header__navbar-item header__navbar-item--strong header__navbar-item--separate
+                "
+              >
+                Đăng ký
+              </li>
+              <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li> -->
+              <li class="header__navbar-item header__navbar-user">  
+                <img src="./assets/img/user.png" alt="" class="header__navbar-user-img">
+                <span class="header__navbar-user-name">Phan Thuận</span>
+                <ul class="header__navbar-user-menu">
+                  <li class="header__navbar-user-item">
+                    <a href="">Tài khoản của tôi</a>
+                    <a href="">Địa chỉ của tôi </a>
+                    <a href="">Đơn mua </a>
+                    <a class="header__navbar-user-item-highlight" href="">Đăng xuất</a>
+                  </li>
+
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <!-- Header witdth search -->
+          <div class="header-width-search ">
+            <label for="mobile-search-checkbox" class="header__mobile-search">
+              <i class="header__mobile-search--icon fas fa-search"></i>
+            </label>
+
+            <div class="header__logo hide-on-tablet">
+              <a href="#" class="header__logo-link">
+                <img src="./assets/img/Logo.png" alt="T.CREW" class="header__logo-img" />
+              </a>
+            </div>
+            <input type="checkbox" hidden id="mobile-search-checkbox" class="header__mobile-search--checkbox">
+            <div class="header__search">
+              <div class="header__search-input-warp">
+                <input
+                  type="text"
+                  class="header__search-input"
+                  placeholder="Nhập để tìm kiếm sản phẩm "
+                />
+                <div class="header__search-history">
+                  <h5 class="header__search-history-heading">Lịch sử tìm kiếm</h5>
+                  <ul class="header__search-history-list">
+                    <li class="header__search-history-items">
+                      <a href="">Jacket</a>
+                    </li>
+                    <li class="header__search-history-items">
+                      <a href="">T-Shirt</a>
+                    </li>
+                    <li class="header__search-history-items">
+                      <a href="">Balo</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="header__search-select">
+                <span class="header__search-select-lable">Trong Shop</span>
+                <i class="header__search-select-icons fas fa-chevron-down"></i>
+                <ul class="header__search-option">
+                  <li class="header__search-option-items header__search-option-items--active">
+                    <span>Trong Shop</span>
+                    <i class="fas fa-check"></i>
+                  </li>
+                  <li class="header__search-option-items">
+                    <span>Ngoài Shop</span>
+                    <i class="fas fa-check"></i>
+                  </li>
+                </ul>
+              </div>
+              <button class="header-search-btn">
+                <i class="header-search-btn-icon fas fa-search"></i>
+              </button>
+            </div>
+            <div class="header__cart">
+              <div class="header__cart-wrap">
+                <i class="header__cart-icons fas fa-shopping-cart"></i>
+                <span class="haeder__cart-notice">3</span>
+                <!-- No-cart: header__cart-list--no-cart -->
+                <div class="header__cart-list">
+                  <img src="./assets/img/no-cart.png" alt="" class="header__cart-no-cart-img" />
+                  <span class="header__cart-no-cart-msg">Chưa có sản phẩm</span>
+                  <h4 class="header__cart-list-heading">Sản phẩm đã được thêm</h4>
+                  <ul class="header__cart-list-item">
+                    <!-- cart item -->
+                    <li class="header__cart-item">
+                      <img src="./assets/img/item-list 1.png" alt="" class="header__cart-img" />
+                      <div class="header__cart-item-info">
+                        <div class="header__cart-item-head">
+                          <h5 class="header__cart-item-name">Backpack Cloud </h5>
+                          <div class="header__cart-item-price-wrap">
+                            <span class="header__cart-item-price">2000000đ</span>
+                            <span class="header__cart-item-multiply">x</span>
+                            <span class="header__cart-item-qnt">2</span>
+                          </div>
+                        </div>
+                        <div class="header__cart-item-body">
+                          <span class="header__cart-item-description">Danh mục: Bag </span>
+                          <span class="header__cart-item-remove">Xoá</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="header__cart-item">
+                      <img src="./assets/img/tee.png" alt="" class="header__cart-img" />
+                      <div class="header__cart-item-info">
+                        <div class="header__cart-item-head">
+                          <h5 class="header__cart-item-name">T-Shirt Cloud</h5>
+                          <div class="header__cart-item-price-wrap">
+                            <span class="header__cart-item-price">2000000đ</span>
+                            <span class="header__cart-item-multiply">x</span>
+                            <span class="header__cart-item-qnt">2</span>
+                          </div>
+                        </div>
+                        <div class="header__cart-item-body">
+                          <span class="header__cart-item-description">Danh mục: T-Shirt </span>
+                          <span class="header__cart-item-remove">Xoá</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="header__cart-item">
+                      <img src="./assets/img/jacket-cart.png" alt="" class="header__cart-img" />
+                      <div class="header__cart-item-info">
+                        <div class="header__cart-item-head">
+                          <h5 class="header__cart-item-name">Jacket Cloud</h5>
+                          <div class="header__cart-item-price-wrap">
+                            <span class="header__cart-item-price">2000000đ</span>
+                            <span class="header__cart-item-multiply">x</span>
+                            <span class="header__cart-item-qnt">2</span>
+                          </div>
+                        </div>
+                        <div class="header__cart-item-body">
+                          <span class="header__cart-item-description">Danh mục: Jacet</span>
+                          <span class="header__cart-item-remove">Xoá</span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <a href=""class="header__cart-vỉew-cart btn btn--primary">Xem giỏ hàng</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="header__sort-bar">
+          <li class="header__sort-item">
+            <a href="" class="header__sort-link">Liên quan</a>
+          </li>
+          <li class="header__sort-item header__sort-item--active">
+            <a href="" class="header__sort-link">Mới nhất</a>
+          </li>
+          <li class="header__sort-item">
+            <a href="" class="header__sort-link">Bán chạy</a>
+          </li>
+          <li class="header__sort-item">
+            <a href="" class="header__sort-link">Giá</a>
+          </li>
+        </ul>
+      </header>
+      <div class="app__container">
+        <div class="bread-crumb">
+            <a href="" class="bread-crumb-link">Trang chủ</a>
+            <i class="bread-crumb-icon fas fa-chevron-right"></i>
+            <a href="" class="bread-crumb-link">Jackets</a>
+            <i class="bread-crumb-icon fas fa-chevron-right"></i>
+            <a href="" class="bread-crumb-link">Monogram Cloud Windbreaker</a>
+        </div>
+        <div class="grid wide">
+            <div class="row single-product">
+                <div class="col l-5">
+                    <div class="single-product__left">
+                        <div class="single-product__img-thumbnail" style="background-image: url(./assets/img/ao-gio.jpg) ;"></div>
+                        <div class="single-product__preview">
+                            <img src="./assets/img/ao-gio.jpg" alt="" class="single-product__preview-img">
+                            <img src="./assets/img/ao-gio.jpg" alt="" class="single-product__preview-img">
+                            <img src="./assets/img/ao-gio.jpg" alt="" class="single-product__preview-img">
+                        </div>
+                        <div class="single-product__left-footer">
+                            <div class="single-product__share">
+                                <span class="single-product__share-text">Chia sẻ:</span>
+                                <a href="" class="single-product__share-link">
+                                    <i class="single-product__share-icon fab fa-facebook"></i>
+                                </a>
+                                <a href="" class="single-product__share-link">
+                                    <i class="single-product__share-icon fab fa-facebook-messenger"></i>
+                                </a>
+                                <a href="" class="single-product__share-link">
+                                    <i class="single-product__share-icon fab fa-pinterest"></i>
+                                </a>
+                                <a href="" class="single-product__share-link">
+                                    <i class="single-product__share-icon fab fa-twitter"></i>
+                                </a>
+                            </div>
+                            <div class="single-product__like">
+                                <i class="single-product__like-icon far fa-heart"></i>
+                                <span class="single-product__like-text">Đã thích (99)</span>
+                            </div>       
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-7 ">
+                    <div class="single-product__info">
+                        <span class="product-info__name">
+                            Monogram Cloud Windbreaker - Áo gió hoạ tiếc Monogram, sang trọng - thanh lịch T.CREW
+                        </span>
+                        <div class="product-info__rate">
+                            <div class="rate__rating">
+                                <span class="rate__label">5.0</span>
+                                <i class="rate__rating-star fas fa-star"></i>
+                                <i class="rate__rating-star fas fa-star"></i>
+                                <i class="rate__rating-star fas fa-star"></i>
+                                <i class="rate__rating-star fas fa-star"></i>
+                                <i class="rate__rating-star fas fa-star"></i>
+                            </div>
+                            <a href="" class="product-info__rate-evluate">
+                               <span class="rate__label">25</span> Đánh giá</a>
+                            <span class="product-info__rate-sold">
+                                <span class="rate__label">88</span> Đã bán</span>
+                        </div>
+                        <div class="product-info__price">
+                            <span class="product-info__price-old">
+                                ₫2.9999.999
+                            </span>
+                            <span class="product-info__price-current">
+                                ₫1.9999.999
+                            </span>
+                            <span class="product-info__price-sale-off">35% GIẢM</span>
+                        </div>
+                        <div class="product-info__vouchers">
+                            <span class="product-info__vouchers-label product__info-label">Mã giảm giá</span>
+                            <div class="product-info__vouchers-ticket">Giảm ₫100k 
+                            </div>
+                            <div class="product-info__vouchers-ticket">Giảm ₫300k </div>
+                            <div class="product-info__vouchers-ticket">Giảm ₫500k </div>
+                            <div class="vouchers-ticket__card">
+                                <h1 class="vouchers-ticket__card--heading">Mã giảm giá của Shop</h1>
+                                <p class="vouchers-ticket__card--desc">
+                                    Tiết kiệm hơn khi áp dụng mã giảm giá của Shop. Liên hệ với Shop nếu gặp trục trặc về mã giảm giá do Shop tự tạo.
+                                </p>
+                                <ul class="vouchers-ticket__card--list">
+                                    <li class="vouchers-ticket__item">
+                                        <div class="vouchers-ticket__item-left">
+                                            <img src="./assets/img/avt-tc.png" alt="" class="vouchers-ticket__item-img">
+                                        </div>
+                                        <div class="vouchers-tiket__item-right">
+                                            <div class="vouchers-tiket__item-desc">
+                                                <span>Giảm ₫100k</span>
+                                                <p>Đơn tối thiểu ₫1.000.000k</p>
+                                                <div class="vouchers-tiket__item-desc--expiry">
+                                                    HSD: 31.12.2021
+                                                </div>
+                                            </div>
+                                            <button class="vouchers-tiket__item-btn">Lưu</button>
+                                        </div>
+                                    </li>
+                                    <li class="vouchers-ticket__item">
+                                        <div class="vouchers-ticket__item-left">
+                                            <img src="./assets/img/avt-tc.png" alt="" class="vouchers-ticket__item-img">
+                                        </div>
+                                        <div class="vouchers-tiket__item-right">
+                                            <div class="vouchers-tiket__item-desc">
+                                                <span>Giảm ₫100k</span>
+                                                <p>Đơn tối thiểu ₫1.000.000k</p>
+                                                <div class="vouchers-tiket__item-desc--expiry">
+                                                    HSD: 31.12.2021
+                                                </div>
+                                            </div>
+                                            <button class="vouchers-tiket__item-btn">Lưu</button>
+                                        </div>
+                                    </li>
+                                    <li class="vouchers-ticket__item">
+                                        <div class="vouchers-ticket__item-left">
+                                            <img src="./assets/img/avt-tc.png" alt="" class="vouchers-ticket__item-img">
+                                        </div>
+                                        <div class="vouchers-tiket__item-right">
+                                            <div class="vouchers-tiket__item-desc">
+                                                <span>Giảm ₫100k</span>
+                                                <p>Đơn tối thiểu ₫1.000.000k</p>
+                                                <div class="vouchers-tiket__item-desc--expiry">
+                                                    HSD: 31.12.2021
+                                                </div>
+                                            </div>
+                                            <button class="vouchers-tiket__item-btn">Lưu</button>
+                                        </div>
+                                    </li>
+                                    <li class="vouchers-ticket__item">
+                                        <div class="vouchers-ticket__item-left">
+                                            <img src="./assets/img/avt-tc.png" alt="" class="vouchers-ticket__item-img">
+                                        </div>
+                                        <div class="vouchers-tiket__item-right">
+                                            <div class="vouchers-tiket__item-desc">
+                                                <span>Giảm ₫100k</span>
+                                                <p>Đơn tối thiểu ₫1.000.000k</p>
+                                                <div class="vouchers-tiket__item-desc--expiry">
+                                                    HSD: 31.12.2021
+                                                </div>
+                                            </div>
+                                            <button class="vouchers-tiket__item-btn">Lưu</button>
+                                        </div>
+                                    </li>
+                                    <li class="vouchers-ticket__item">
+                                        <div class="vouchers-ticket__item-left">
+                                            <img src="./assets/img/avt-tc.png" alt="" class="vouchers-ticket__item-img">
+                                        </div>
+                                        <div class="vouchers-tiket__item-right">
+                                            <div class="vouchers-tiket__item-desc">
+                                                <span>Giảm ₫100k</span>
+                                                <p>Đơn tối thiểu ₫1.000.000k</p>
+                                                <div class="vouchers-tiket__item-desc--expiry">
+                                                    HSD: 31.12.2021
+                                                </div>
+                                            </div>
+                                            <button class="vouchers-tiket__item-btn">Lưu</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-info__transport">
+                            <span class="product__info-label"> Vận chuyển</span>
+                            <div class="transport__info">
+                              <div class="transport__location">
+                                <i class="transport__location-icon fas fa-shipping-fast"></i>
+                                <span class="transport__location-label">Vận Chuyển Tới</span>
+                                <div class="transport__location-selected">Thị Trấn Sịa<i class="transport__location-option--icon fas fa-chevron-down"></i>
+                                  <div class="transport__location-select">
+                                    <input type="text" placeholder="Tìm" class="transport__location-input">
+                                    <ul class="transport__location-option">
+                                      <li class="transport__location-option--item">
+                                            Thừa Thiên Huế
+                                      </li>
+                                      <li class="transport__location-option--item">
+                                        Thừa Thiên Huế
+                                      </li>
+                                      <li class="transport__location-option--item">
+                                        Thừa Thiên Huế
+                                      </li>
+                                      <li class="transport__location-option--item">
+                                        Thừa Thiên Huế
+                                      </li>
+                                      <li class="transport__location-option--item">
+                                        Thừa Thiên Huế
+                                      </li>
+                                      <li class="transport__location-option--item">
+                                        Thừa Thiên Huế
+                                      </li>
+                                      <li class="transport__location-option--item">
+                                        Thừa Thiên Huế
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div> 
+                              </div>
+                                <div class="transport__fee">
+                                    <span class="transport__fee-label">Phí Vận Chuyển</span>
+                                    <div class="transport__fee-select">
+                                      <div class="transport__fee-selected"> Miễn phí vấn chuyển
+                                        <i class="transport__fee-selected--icon fas fa-chevron-down"></i>
+                                        <ul class="transport__fee-option">
+                                          <li class="transport__fee-item">
+                                              <span>Hoã tốc</span>
+                                              <span>Không hỗ trợ</span>
+                                          </li>
+                                          <li class="transport__fee-item">
+                                              <span>Nhanh</span>
+                                              <span>Không hỗ trợ</span>
+                                          </li>
+                                        </ul>
+                                      
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info__color">
+                          <span class="product__info-label" >MÀU</span>
+                          <input type="radio" hidden name="radio" id="color-white" class="check-box__btn">
+                            <label for="color-white" class="btn--label" >Trắng
+                              <i class="btn--check-icon fas fa-check"></i>
+                            </label>
+                            
+                          <input type="radio" hidden name="radio" id="color-blue" class="check-box__btn">
+                            <label for="color-blue" class="btn--label" >Xanh
+                              <i class="btn--check-icon fas fa-check"></i>
+                            </label>  
+                        </div>
+                        <div class="product-info__size">
+                          <span class="product__info-label">SIZE</span>
+                          <input type="radio" hidden name="radio" id="size-s" class="check-box__btn">
+                            <label for="size-s" class="btn--label" >S
+                              <i class="btn--check-icon fas fa-check"></i>
+                            </label>
+                          <input type="radio" hidden name="radio" id="size-m" class="check-box__btn">
+                            <label for="size-m" class="btn--label" >M
+                              <i class="btn--check-icon fas fa-check"></i>
+                            </label>
+                          <input type="radio" hidden name="radio" id="size-l" class="check-box__btn">
+                            <label for="size-l" class="btn--label" >L
+                              <i class="btn--check-icon fas fa-check"></i>
+                            </label>
+                          <input type="radio" hidden name="radio" id="size-xl" class="check-box__btn">
+                            <label for="size-xl" class="btn--label" >XL
+                              <i class="btn--check-icon fas fa-check"></i>
+                            </label>
+                            
+                        </div>
+                        <div class="product-info__qnt">
+                            <span class="product__info-label">Số Lượng</span>
+                            <input class="product__info-input--minus" type="button" value="-">
+                            <input aria-label="quantity" class="product-info__qnt-input" max="Số tối đa" min="Số tối thiểu" name="" type="number" value="">
+                            <input class="product__info-input--plus" type="button" value="+">
+                            <span class="product-info__qnt-has">99 sản phẩm có sẵn</span>
+                        </div>
+                        <div class="single-product__action">
+                            <button class="btn product__action-add-cart">
+                                <i class="fas fa-cart-plus"></i>
+                                Thêm vào giỏ hàng
+                            </button>
+                            <button class="btn product__action-buy">Mua ngay</button>
+                        </div>
+                        <div class="single-product__policy">
+                            <span class="single-product__policy-content">
+                                <i class="fas fa-undo-alt"></i>
+                                7 ngày miễn phí trả hàng
+                            </span>
+                            <span class="single-product__policy-content">
+                                <i class="fas fa-shipping-fast"></i>
+                                Hàng chính hãng 100%
+                            </span>
+                            <span class="single-product__policy-content">
+                                <i class="fas fa-clipboard-check"></i>
+                                Miễn phí vận chuyển
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- <footer class="footer">
+        <div class="grid wide footer__content">
+          <div class="row">
+            <div class="col l-2-4 m-4 c-6 ">
+              <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="" class="footer__list-item--link">Trung tâm trợ giúp</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="" class="footer__list-item--link">T.CREW Shop Mall</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="" class="footer__list-item--link">Hướng dẫn mua hàng</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col l-2-4 m-4 c-6 ">
+              <h3 class="footer__heading">Giới thiệu</h3>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="" class="footer__list-item--link">Giới thiệu về T.CREW Việt Nam</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="" class="footer__list-item--link">Tuyển dụng</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="" class="footer__list-item--link">Điều khoản T.CREW</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col l-2-4 m-4 c-6 ">
+              <h3 class="footer__heading">Danh mục</h3>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="" class="footer__list-item--link">Jackets</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="" class="footer__list-item--link">T-Shirt</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="" class="footer__list-item--link">Bag</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col l-2-4 m-4 c-6 ">
+              <h3 class="footer__heading">Theo dõi
+              </h3>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="" class="footer__list-item--link">
+                    <i class="footer__list-item--icon fab fa-facebook"></i>
+                    Facebook
+                  </a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="" class="footer__list-item--link">
+                    <i class="footer__list-item--icon fab fa-youtube"></i>
+                    Youtube
+                  </a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="" class="footer__list-item--link">
+                    <i class="footer__list-item--icon fab fa-telegram"></i>
+                    Telegram
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col l-2-4 m-8 c-12 ">
+              <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
+              <div class="footer__dowload">
+                <img src="./assets/img/QR.png" alt="QR CODE" class="footer__dowload-qr">
+                <div class="footer__dowload_apps">
+                 <a href="" class="footer__dowload-apps--link">
+                   <img src="./assets/img/gg-play.png" alt="Google Play" class="footer__dowload_apps-img">
+                </a> 
+                <a href="" class="footer__dowload-apps--link">
+                  <img src="./assets/img/app-store.png" alt="App Store" class="footer__dowload_apps-img">        
+                </a> 
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="footer__info"> 
+            <div class=" footer__policy">
+              <a href="" class="footer__policy--link">CHÍNH SÁCH BẢO MẬT</a>
+              <a href="" class="footer__policy--link footer__policy-border">QUY CHẾ HOẠT ĐỘNG</a>
+              <a href="" class="footer__policy--link">TRẢ HÀNG & HOÀN TIỀN</a>
+            </div>
+            <p class="footer__text">© 2021 -  Bản quyền thuộc Công ty T.CREW</p>
+          </div>
+      </footer> -->
